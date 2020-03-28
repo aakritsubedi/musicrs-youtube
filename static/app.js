@@ -54,7 +54,6 @@ function videos(
     });
     itemDiv.append(tagData);
   }
-  itemDiv.append(document.createElement("hr"));
 
   if (divId === "result-title") {
     $("#result-title").append(itemDiv);
