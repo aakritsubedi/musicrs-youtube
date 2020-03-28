@@ -68,7 +68,7 @@ $(function() {
     $("#result-title").empty();
     e.preventDefault();
     $.ajax({
-      url: "http://localhost:5000/youtube/title/" + $("#search-title").val(),
+      url: "/youtube/title/" + $("#search-title").val(),
       type: "GET",
       success: function(results) {
         $.each(results.items, function(index, item) {
@@ -94,7 +94,7 @@ $(function() {
     $("#result-id").empty();
     e.preventDefault();
     $.ajax({
-      url: "http://localhost:5000/youtube/id/" + $("#search-id").val(),
+      url: "/youtube/id/" + $("#search-id").val(),
       type: "GET",
       success: function(results) {
         $.each(results.items, function(index, item) {
