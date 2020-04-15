@@ -19,7 +19,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/style.css" />
   </head>
   <body>
     <div class="container">
@@ -33,6 +33,7 @@
         <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
         <li><a data-toggle="tab" href="#menu1">Search by Name</a></li>
         <li><a data-toggle="tab" href="#menu2">Search by Id</a></li>
+        <li><a data-toggle="tab" href="#menu3">Youtube Music 5M Dataset</a></li>
       </ul>
       <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
@@ -157,6 +158,78 @@
               <div id="result-id"></div>
             </div>
           </div>
+        </div>
+        <div id="menu3" class="tab-pane fade in">
+          <h3>Youtube 5M Dataset</h3>
+          <div class="row">
+            <div class="col-md-7">
+              <ul>
+                <li>5,119,955 video ID's in youtube in 20 text files.</li>
+                <li>
+                  file name: "youtube_video_ids_{:0d}_{}.txt".format(file_index,
+                  n_ids_this_file)
+                </li>
+                <li>
+                  Entries of the files are either
+                  <ul>
+                    <li><code>"\n"</code></li>
+                    <li>
+                      <code>
+                        "# new artist:\t{}\t{}\n".format(artist_name,
+                        artist_spotify_id)
+                      </code>
+                    </li>
+                    <li><code>"{}\n".format(youtube_video_id)</code></li>
+                  </ul>
+                </li>
+                <li>
+                  E.g., the first 10 lines of youtube_video_ids_00_206947.txt is...
+                  <pre>
+                    # new artist: Drake 3TVXtAsR1Inumwj472S9r4
+    
+                      3t195yz9xCc
+                      VkXjvHfP3MM
+                      7LnBvuzjpr4
+                      1Ldzm7KGECI
+                      HL1UzIK-flA
+                      3XR5mhXtpXw
+                      WsPfSXJaelk
+                  </pre>
+                </li>
+                <li>
+                  Files and entries are sorted by some sort of artist popularity.
+                </li>
+                <li>Each text file includee video ID's of 500 artists</li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <h4>Download Dataset</h4>
+              <a href="youtube-dataset.zip">Download 5M Music Dataset.zip</a>
+              <ul>
+                <li><a href="youtube-dataset/youtube_video_ids_00_206947.txt">file-1</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_01_235614.txt">file-2</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_02_242353.txt">file-3</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_03_244387.txt">file-4</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_04_249301.txt">file-5</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_05_248627.txt">file-6</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_06_247838.txt">file-7</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_07_255766.txt">file-8</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_08_252801.txt">file-9</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_09_251585.txt">file-10</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_10_252204.txt">file-11</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_11_248030.txt">file-12</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_12_248831.txt">file-13</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_13_247658.txt">file-14</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_14_247557.txt">file-15</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_15_250890.txt">file-16</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_16_250165.txt">file-17</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_17_247362.txt">file-18</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_18_250524.txt">file-19</a></li>
+                <li><a href="youtube-dataset/youtube_video_ids_19_246323.txt">file-20</a></li>
+              </ul>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
